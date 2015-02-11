@@ -5,17 +5,17 @@ var coinCombo = function(change) {
       nickel = 0;
 
   if ( change >= 25 ) {
-    quarter = change / 25;
+    quarter = Math.floor(change / 25);
     change = change % 25;
 
   }
   if (change >= 10) {
-    dime = change / 10;
+    dime = Math.floor(change / 10);
     change = change % 10;
 
   }
   if (change >= 5) {
-    nickel = change / 5;
+    nickel = Math.floor(change / 5);
     change = change % 5;
   }
 
