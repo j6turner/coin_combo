@@ -26,4 +26,12 @@ var coinCombo = function(change) {
 
   results = [quarter, dime, nickel, penny]
   return results;
-}
+};
+
+$(document).ready(function() {
+  $("form#coin-combo").submit(function(event) {
+
+    var
+
+  });
+});
