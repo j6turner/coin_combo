@@ -29,9 +29,21 @@ var coinCombo = function(change) {
 };
 
 $(document).ready(function() {
+  $("#result").hide();
   $("form#coin-combo").submit(function(event) {
+    var change = parseInt($("input#change").val());
+    var result = coinCombo(change);
+    var quarter = result[0],
+        dime = result[1],
+        nickel = result[2],
+        penny = result[3];
 
-    var
+    $(".quarter").text(quarter);
+    $(".dime").text(dime);
+    $(".nickel").text(nickel);
+    $(".penny").text(penny);
 
+    $("#result").show();
+    event.preventDefault();
   });
 });
