@@ -11,5 +11,8 @@ describe('coinCombo', function () {
   it('returns the least amount of coins for 30 cents', function() {
     expect(coinCombo(30)).to.eql([1,0,1,0]);
   });
-  
+
+  it('returns the least amount of coins for 9 cents', function() {
+    expect(coinCombo(9)).to.eql([0,0,1,4]);
+  });
 });
